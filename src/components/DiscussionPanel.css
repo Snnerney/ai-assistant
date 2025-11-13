@@ -1,0 +1,71 @@
+.discussion-panel {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.discussion-panel--chat {
+  height: 100%;
+}
+
+.chat-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.controls {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 8px;
+  background: #fff;
+  border-radius: 8px 8px 0 0;
+  flex-shrink: 0;
+}
+
+.pause-banner {
+  flex-shrink: 0;
+  margin: 0;
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    background-color: #fffbe6;
+  }
+  50% {
+    background-color: #fff7e6;
+  }
+}
+
+.chat-scroll-area {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.chat-input {
+  position: sticky;
+  bottom: 0;
+  border-top: 1px solid #f0f0f0;
+  padding: 8px;
+  background: #fff;
+  border-radius: 0 0 8px 8px;
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+.upload-hint {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #1890ff;
+  display: flex;
+  gap: 8px;
+}

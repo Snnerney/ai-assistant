@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import react from '@vitejs/plugin-react'
 
 function devProxyPlugin() {
   return {
@@ -54,7 +54,7 @@ function devProxyPlugin() {
 }
 
 export default defineConfig({
-  plugins: [vue(), devProxyPlugin()],
+  plugins: [react(), devProxyPlugin()],
   base: './',
   server: {
     port: 5173

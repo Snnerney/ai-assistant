@@ -1,0 +1,19 @@
+.expandable-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.expandable-text__content {
+  position: relative;
+  word-break: break-word;
+}
+
+.expandable-text__plain {
+  white-space: pre-wrap;
+}
+
+.expandable-text__actions {
+  display: flex;
+  justify-content: flex-end;
+}
